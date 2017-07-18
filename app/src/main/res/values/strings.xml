@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Adamska Habit Tracker</string>
+
+    <string name="habit">Activity:</string>
+    <string name="day">Day of the week:</string>
+    <string name="time">At what time?</string>
+    <string name="additional">Additional remarks:</string>
+
+    <string name="hint_per_habit">Your activity</string>
+    <string name="hint_per_time">Hour:Minutes</string>
+    <string name="hint_per_additional">Additional remarks</string>
+
+    <string name="every_day">Every Day</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+
+    <string name="editor_activity_title">Add a New Activity</string>
+
+    <string name="action_save">Save</string>
+</resources>
