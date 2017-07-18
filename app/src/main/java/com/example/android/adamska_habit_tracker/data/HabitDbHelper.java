@@ -1,6 +1,6 @@
 package com.example.android.adamska_habit_tracker.data;
 
-/**
+/*
  * Created by kasia on 18.07.17.
  */
 
@@ -9,8 +9,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.android.adamska_habit_tracker.data.HabitContract.HabitEntry;
-
-import static android.provider.Contacts.SettingsColumns.KEY;
 
 /**
  * Database helper for Habits app. Manages database creation and version management.
@@ -25,15 +23,15 @@ public class HabitDbHelper extends SQLiteOpenHelper {
      */
     private static final int DATABASE_VERSION = 1;
 
-/**
- * Constructs a new instance of {@link HabitDbHelper}.
- *
- * @param context of the app
- */
+    /**
+     * Constructs a new instance of {@link HabitDbHelper}.
+     *
+     * @param context of the app
+     */
 
-public HabitDbHelper(Context context) {
-    super(context, DATABASE_NAME, null, DATABASE_VERSION);
-}
+    public HabitDbHelper(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
+    }
 
     /**
      * This is called when the database is created for the first time.
@@ -52,7 +50,7 @@ public HabitDbHelper(Context context) {
     }
 
     /**
-     * It must be called because the SQLiteOpenHelper class requires that
+     * It must be present because the SQLiteOpenHelper class requires that
      */
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

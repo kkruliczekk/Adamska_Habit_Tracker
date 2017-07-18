@@ -29,8 +29,6 @@ public class EditorActivity extends AppCompatActivity {
 
     private Spinner mDaysSpinner;
 
-    //private EditText mTimeEditText;
-
     private TimePicker mTimePicker;
 
     private EditText mRemarksEditText;
@@ -51,7 +49,6 @@ public class EditorActivity extends AppCompatActivity {
         // Find all relevant views that we will need to read user input from
         mHabitEditText = (EditText) findViewById(R.id.habit_edit);
         mDaysSpinner = (Spinner) findViewById(R.id.spinner_day);
-        //mTimeEditText = (EditText) findViewById(R.id.time_edit);
         mTimePicker = (TimePicker) findViewById(timePicker);
         mTimePicker.setIs24HourView(true);
         mRemarksEditText = (EditText) findViewById(R.id.additional_edit);
@@ -113,7 +110,6 @@ public class EditorActivity extends AppCompatActivity {
     private boolean insertHabit() {
 
         String habitString = mHabitEditText.getText().toString().trim();
-        //String timeString = mTimeEditText.getText().toString().trim();
         int hour = mTimePicker.getCurrentHour();
         int min = mTimePicker.getCurrentMinute();
         String remarksString = mRemarksEditText.getText().toString().trim();
@@ -121,7 +117,7 @@ public class EditorActivity extends AppCompatActivity {
         //Check if the User inserts required field - habit
         //if not - display message
         if (habitString.isEmpty()) {
-             Toast.makeText(this, "Field 'Habit' can not be empty", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Field 'Habit' can not be empty", Toast.LENGTH_SHORT).show();
 
             //if required field is not empty - add the data to database
         } else {
